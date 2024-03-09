@@ -1,0 +1,356 @@
+@import "variables";
+
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: $fontFamily;
+    color: $mid-dark;
+    font-size: 16px;
+
+    @include device-xxl {
+        font-size: 17px;
+    }
+
+    @include device-xl {
+        font-size: 14px;
+    }
+
+    @include device-lg {
+        font-size: 12px;
+    }
+
+    @include device-md {
+        font-size: 11px;
+    }
+
+    @include device-sm {
+        font-size: 11px;
+    }
+
+    @include device-xs {
+        font-size: 12px;
+    }
+}
+.container {
+    max-width: 90%;
+    @include device-sm{
+        max-width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    @include device-xs{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+}
+
+
+a,
+button {
+    cursor: pointer;
+}
+
+.image {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.image img {
+    width: 100%;
+}
+
+
+
+// font-size
+.font-heading2 {
+    font-size: $font-heading2;
+}
+
+.font-heading {
+    font-size: $font-heading;
+}
+
+.font-xxxl {
+    font-size: $font-xxxl;
+}
+
+.font-xxl {
+    font-size: $font-xxl;
+}
+
+.font-xl {
+    font-size: $font-xl;
+}
+
+.font-lg {
+    font-size: $font-lg;
+}
+
+.font-md {
+    font-size: $font-md;
+}
+
+.font-sm {
+    font-size: $font-sm;
+}
+
+.font-xs {
+    font-size: $font-xs;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.thin {
+    font-weight: $font-thin;
+}
+
+.extraLight {
+    font-weight: $font-extraLight;
+}
+
+.light {
+    font-weight: $font-light;
+}
+
+.regular {
+    font-weight: $font-regular;
+}
+
+.semibold {
+    font-weight: $font-semibold;
+}
+
+.bold {
+    font-weight: $font-bold;
+}
+
+.extraBold {
+    font-weight: $font-extraBold;
+}
+
+.block {
+    font-weight: $font-black;
+}
+// background
+.primary {
+    background: $primary !important;
+}
+
+.primary-light {
+    background: $primary-light !important;
+}
+
+.secondary {
+    background: $secondary !important;
+}
+
+.secondary-light {
+    background: $secondary-light !important;
+}
+
+.tertiary {
+    background: $tertiary !important;
+}
+
+.tertiary-light {
+    background: $tertiary-light !important;
+}
+
+.dark {
+    background: $dark !important;
+}
+
+.mid-dark {
+    background: $mid-dark !important;
+}
+
+.grey {
+    background: $grey !important;
+}
+
+.light-grey {
+    background: $light-grey !important;
+}
+
+.white {
+    background: $white !important;
+}
+
+.primary-gradient {
+    background: $primary-gradient !important;
+}
+
+// text color
+.primary-text {
+    color: $primary;
+}
+
+.primary-light-text {
+    color: $primary-light;
+}
+
+.secondary-text {
+    color: $secondary;
+}
+
+.tertiary-text {
+    color: $tertiary;
+}
+
+.dark-text {
+    color: $dark;
+}
+
+.mid-dark-text {
+    color: $mid-dark;
+}
+
+.grey-text {
+    color: $grey
+}
+
+.light-grey-text {
+    color: $light-grey;
+}
+
+.white-text {
+    color: $white;
+}
+
+.round {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.btn,
+a.btn {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    font-size: $font-md;
+    line-height: 1.5;
+    padding: 0.4rem 1rem;
+    border-radius: 3rem;
+}
+
+.btn:focus,
+a.btn:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+// button primary
+.btn-primary,
+a.btn-primary {
+    background: $primary-gradient;
+    border: 1px solid $primary;
+    color: $white !important;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &.hover,
+    &:not(:disabled):not(.disabled):active:focus {
+        background: $primary-gradient;
+        color: #fff !important;
+        border: 1px solid $primary;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+
+// button secondary
+.btn-secondary,
+a.btn-secondary {
+    background: $secondary-gradient;
+    border: 1px solid $secondary;
+    color: $white !important;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &.hover,
+    &:not(:disabled):not(.disabled):active:focus {
+        background: $secondary-gradient;
+        color: $white !important;
+        border: 1px solid $secondary;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+// button white
+.btn-white,
+a.btn-white {
+    background: $light-gradient;
+    border: 1px solid $light-grey;
+    color: $primary !important;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &.hover,
+    &:not(:disabled):not(.disabled):active:focus {
+        background: $light-gradient;
+        color: $primary !important;
+        border: 1px solid $light-grey;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+
+.btn-xxl {
+    padding: 0.8rem 1rem;
+    i {
+        font-size: 2.9rem;
+    }
+}
+
+.btn-xl {
+    padding: 0.5rem 0.6rem;
+    i {
+        font-size: 1.9rem;
+    }
+}
+
+.btn-lg {
+    padding: 0.4rem 0.5rem;
+    i {
+        font-size: 1.5rem;
+    }
+}
+
+.btn-md {
+    padding: 0.3rem 0.4rem;
+    i {
+        font-size: 1.4rem;
+    }
+}
+a.btn-link{
+    color: $secondary;
+    &:hover{
+        color: $secondary;
+    }
+}

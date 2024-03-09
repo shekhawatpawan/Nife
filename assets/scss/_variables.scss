@@ -1,0 +1,88 @@
+// Typography =======
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+$fontFamily: 'Poppins',
+sans-serif;
+// theme fonts size
+$font-heading2: 3.75rem; // 60px
+$font-heading: 3rem; // 48px
+$font-xxxl: 2rem; // 24px
+$font-xxl: 1.375rem; // 22px
+$font-xl: 1.25rem; // 20px
+$font-lg: 1.125rem; // 18px
+$font-md: 1rem; // 16px
+$font-sm: 0.875rem; // 14px
+$font-xs: 0.687rem; // 11px
+//font-weight
+$font-thin: 100;
+$font-extraLight: 200;
+$font-light: 300;
+$font-regular: 400;
+$font-semibold: 500;
+$font-bold: 600;
+$font-extraBold: 700;
+$font-black: 800;
+// theme colors ============
+$primary: #543999;
+$primary-light: #E3E6F9;
+$secondary: #F94747;
+$secondary-light: #f7951d4b;
+$tertiary: #e9b220;
+$tertiary-light: #e9b3204f;
+$highlight:#FFFEF5;
+$dark: #000;
+$mid-dark: #444444;
+$grey: #666666;
+$light-grey: #B2B2B2;
+$extra-light:#ECECEC;
+$white: #fff;
+$error: #EC296E;
+$bg-color:#F5F6FA;
+$tag-bg:#FFFDF7;
+
+$primary-gradient: linear-gradient(90deg, #151DAC 0%, #6851D6 99.99%);
+$secondary-gradient: linear-gradient(101.82deg, #FFB166 -23.13%, #EF514E 56.78%);
+$light-gradient:  linear-gradient(90deg, #FFFFFF 58.5%, #F2F3F9 100%);
+
+$success: #40B53E;
+//theme media
+$xxl-width: 1850px;
+$xl-width: 1480px;
+$lg-width: 1300px;
+$md-width: 1100px;
+$sm-width: 992px;
+$xs-width: 667px;
+@mixin device-xxl {
+    @media (min-width: #{$xxl-width}) {
+        @content;
+    }
+}
+
+@mixin device-xl {
+    @media (max-width: #{$xl-width}) {
+        @content;
+    }
+}
+
+@mixin device-lg {
+    @media (max-width: #{$lg-width}) {
+        @content;
+    }
+}
+
+@mixin device-md {
+    @media (max-width: #{$md-width}) {
+        @content;
+    }
+}
+
+@mixin device-sm {
+    @media (max-width: #{$sm-width}) {
+        @content;
+    }
+}
+
+@mixin device-xs {
+    @media (max-width: #{$xs-width}) {
+        @content;
+    }
+}
